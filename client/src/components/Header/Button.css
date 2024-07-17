@@ -1,0 +1,27 @@
+.btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: #117db0;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  padding: 6px 18px;
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 30px;
+  border: 2px solid #117db0;
+  transition: all 0.3s ease-out;
+}
+@media screen and (max-width: 960px) {
+  .btn {
+    display: none;
+  }
+}
+

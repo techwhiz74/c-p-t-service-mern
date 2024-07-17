@@ -1,0 +1,83 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: auto;
+    animation: zoomIn 0.8s ease-in-out;
+  }
+  
+  .container .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Arrows */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+  
+  .arrow.arrow-left {
+    left: 10px;
+  }
+  
+  .arrow.arrow-right {
+    right: 10px;
+  }
+  
+  .discreption {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 999;
+    width: 600px;
+  }
+  
+  .carousel-boullt span {
+    width: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 5px;
+    background: #000000;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .carousel-boullt span.active {
+    background: #fff;
+  }
+  
+  .carousel-boullt span:hover {
+    background: #fff;
+  }
+  
+  .carousel-boullt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

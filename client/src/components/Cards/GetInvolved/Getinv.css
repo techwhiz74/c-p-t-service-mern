@@ -1,0 +1,162 @@
+.getContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 3rem;
+    text-align: center;
+}
+.getContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 4rem;
+    text-align: center;
+}
+.getContent::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), url('../../../images/contact-us.jpg') no-repeat center center/cover fixed;
+    z-index: -1;
+}
+.getHeading{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    color: #117db0;
+    border-left:.4em solid #117db0 ;
+    padding-left: 1rem;
+}
+.getText{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 80%;
+}
+.getBtn{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 80%;
+    background-color: #117db0;
+    border-color: #117db0;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.getBtn:hover{
+    background-color: transparent;
+    color: #117db0;
+    border-color: #117db0;
+}
+.cardHeading{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #000;
+    padding: 3rem 0;
+}
+/* Card container */
+.getCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* Individual card */
+  .getCard {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+  }
+  
+  .getCard:hover {
+    border: solid #117db0;
+    cursor:pointer ;
+  }
+  
+  /* Icon */
+  .getCardIcon {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* Text container */
+  .getCardText {
+    flex: 1; /* Fill the remaining space inside the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .getCardHeading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  /* Paragraph */
+  .getCardPara {
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 400; /* Adjust font weight as needed */
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  /* Button */
+  .getCardBtn {
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background-color: #117db0;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .getCardBtn:hover {
+    background-color: #fff;
+    color: #117db0;
+    border: 1px solid #117db0;
+  }
+  @media only screen and (max-width: 767px) {
+    .getHeading{
+        font-size: 2rem;
+    }
+    .getText{
+        font-size: 0.9rem;
+        max-width: 100%;
+    }}

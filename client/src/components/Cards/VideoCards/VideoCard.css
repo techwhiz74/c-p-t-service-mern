@@ -1,0 +1,47 @@
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 3rem;
+  }
+  
+  .videoHeading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3rem;
+  }
+  
+  .videoContent {
+    width: 100%;
+    position: relative;
+    
+  }
+  
+  .videoContent::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; 
+  }
+
+  .videoContent iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;   
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .videoHeading {
+      font-size: 2rem;
+    }
+    .videoContainer {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

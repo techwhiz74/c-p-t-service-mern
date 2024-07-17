@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Build output
+/build
+
+# Backend build output (if applicable)
+/backend/build
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# Add other specific ignores here, if necessary

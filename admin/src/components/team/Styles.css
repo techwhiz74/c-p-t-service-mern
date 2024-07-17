@@ -1,0 +1,125 @@
+/* Assuming you have a main container wrapping your dashboard components */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* News List Styles */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.create {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  a.create:hover {
+    background-color: #218838;
+  }
+  
+  a.delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  a.delete:hover {
+    background-color: #c82333;
+  }
+  
+  a.update {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  a.update:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+  }
+  
+  /* Form Styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.create {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  button.create:hover {
+    background-color: #218838;
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  button.update {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  button.update:hover {
+    background-color: #0056b3;
+  }
+  

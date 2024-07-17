@@ -1,0 +1,109 @@
+.impactContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    align-items: center;
+    height: 100vh;
+}
+.impactContainer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), url('../../images/impact.webp') no-repeat center center/cover fixed;
+    z-index: -1;
+}
+.impactContent {
+    flex: 1;
+    padding: 3rem;
+  }
+.impactHeading{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    color: #117db0;
+    border-left:.4em solid #117db0 ;
+    padding-left: 1rem;
+}
+.impactText{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 80%;
+}
+.impactCard{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    color: #fff;
+}
+.cardItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 10px;
+    font-size: 2rem;
+}
+.cardItem:hover{
+  transform:scale(1.2);
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+.cardItem .icon{
+  color: #117db0;
+}
+.impactCard h2{
+    font-family:'Poppins', sans-serif!important;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+@media (max-width: 768px) {
+    .impactContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .impactContent {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .impactHeading {
+      font-size: 2rem;
+      margin-top: 30px;
+      border: none; 
+      padding-left: 0; 
+    }
+  
+    .impactText {
+      font-size: 1.2rem;
+      max-width: 100%;
+    }
+  
+    .impactCard {
+      padding: 10px;
+      font-size: 1.5rem;
+
+    }
+  
+    .cardItem {
+      margin: 5px;
+    }
+  
+    .impactCard h2 {
+      font-size: 0.8rem;
+    }
+  }
