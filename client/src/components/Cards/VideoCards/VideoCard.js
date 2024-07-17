@@ -58,7 +58,7 @@ function VideoCard() {
       </motion.h1>
       <div className="videoContent" ref={ref}>
         <motion.iframe
-          src="/video.mp4"
+          src="https://youtu.be/7rgkyriwJLc"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
