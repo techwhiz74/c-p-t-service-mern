@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const URI = process.env.URI;
+const URI = "mongodb://127.0.0.1:27017/cpt-service";
 
 module.exports = async () => {
   const connectionParams = {

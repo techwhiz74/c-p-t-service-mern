@@ -27,8 +27,8 @@ function Genesis() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           We are a organization founded in 2019 by a group of young
-          Moroccan social entrepreneurs who believe in the power of social
-          entrepreneurship to create a better future for Morocco.
+          Nigerian social entrepreneurs who believe in the power of social
+          entrepreneurship to create a better future for Nigeria.
         </motion.p>
       </div>
       <div className="listContainer">
@@ -56,7 +56,7 @@ function Genesis() {
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -100 }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            We envision a Morocco where every citizen is empowered to be a
+            We envision a Nigeria where every citizen is empowered to be a
             changemaker
           </motion.p>
         </motion.div>

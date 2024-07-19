@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const joi = require("joi");
 
-router.post("/", async (req, res) => {
+router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
     const { error } = validate(req.body);
@@ -12,6 +12,7 @@ router.post("/", async (req, res) => {
     const user = await User.findOne({ email });
     if (!user) return res.status(400).send("Email or password is wrong");
     const validPassword = await bcrypt.compare(password, user.password);
+    console.log(validPassword, "validPassworkd");
     if (!validPassword)
       return res.status(400).send("Email or password is wrong");
     const token = user.generateAuthToken();

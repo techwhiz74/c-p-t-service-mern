@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <Link to="/" className="Footer-logo">
-          LOGO
+          <img src="./logo.png" alt="Logo" width={120} height={60} />
         </Link>
         <ul className="footer-grid">
           <li className="Footer-item">

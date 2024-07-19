@@ -5,6 +5,7 @@
     padding: 3rem;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 .impactContainer::before{
     content: '';

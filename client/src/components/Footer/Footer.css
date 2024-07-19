@@ -1,7 +1,7 @@
 /* Footer Container */
 .footer {
-  background-color: #dedcdc;
-  color: #000000;
+  background-color: #333;
+  color: #fff;
   padding: 30px 0;
   font-family: 'Open Sans', sans-serif;
   position: s;
@@ -29,7 +29,7 @@
 }
 
 .Footer-links {
-  color: #000000;
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
   font-style: italic;
@@ -68,7 +68,7 @@
 .social-media-icons a {
   margin: 0 10px;
   font-size: 24px;
-  color: #000000;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -105,7 +105,7 @@
     text-align: center;
   }
   .Footer-links {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-size: 10px;
     font-style:normal;
