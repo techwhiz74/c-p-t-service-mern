@@ -72,10 +72,10 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    emailjs.init("m02NyOLEVJG_kJ-pj");
+    emailjs.init("tMlFyEVmgVGBEb4JO");
 
     const emailParams = {
-      to_email: "internship.Project.TECH57@gmail.com",
+      to_email: "markloughlingm@gmail.com",
       from_name: formData.fullName,
       organization: formData.organization,
       phone_number: formData.phoneNumber,
@@ -84,7 +84,7 @@ const Contact = () => {
     };
 
     try {
-      await emailjs.send("service_hskmdd8", "template_p6u2fnl", emailParams);
+      await emailjs.send("service_ccfo6aa", "template_7eu0ycd", emailParams);
 
       setFormData(initialFormData);
       setSubmissionStatus("success");

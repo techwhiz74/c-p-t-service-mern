@@ -7,14 +7,14 @@ import "./Highlights.css";
 
 function Highlights() {
   const images = [
-    "../image-1.jpg",
-    "../image-2.jpg",
-    "../image-3.png",
-    "../image-4.jpg",
-    "../image-5.jpg",
-    "../image-6.jpg",
-    "../image-7.jpg",
-    "../image-8.jpg",
+    "../highlight/image-1.jpg",
+    "../highlight/image-2.jpg",
+    "../highlight/image-3.png",
+    "../highlight/image-4.jpg",
+    "../highlight/image-5.jpg",
+    "../highlight/image-6.jpg",
+    "../highlight/image-7.jpg",
+    "../highlight/image-8.jpg",
   ];
 
   const settings = {

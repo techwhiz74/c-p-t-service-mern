@@ -3,12 +3,14 @@ import "./Hero.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import BackgroundSlider from "../slider/BackgroundSlider";
 
 const Hero = () => {
   const [ref, inView] = useInView({ threshold: 0.5 }); 
 
   return (
     <div className="hero-container" ref={ref}>
+      <BackgroundSlider />
       <div className={`hero-content ${inView ? "animate" : ""}`}>
         <motion.h1
           className="heroHeading"

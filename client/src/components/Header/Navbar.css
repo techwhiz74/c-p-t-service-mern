@@ -1,5 +1,5 @@
 .navbar {
-  height: 50px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,13 +7,12 @@
   position: absolute ;
   left: 0;
   right: 0;
-  width: 90%;
+  width: 95%;
   margin: auto;
   top:1vh;
   z-index: 999;
-  border-radius: 30px;
-  background-color: rgba(91, 83, 83, 0.199);
- 
+  background-color: transparent;
+  border-bottom: 1px solid white;
 }
 .navbar-logo {
   color: #fff;
@@ -21,7 +20,7 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .fa-firstdraft {
@@ -56,8 +55,7 @@
   border: transparent solid;
 }
 .nav-links:hover {
-  border: #117db0 solid ;
-  border-radius: 20px;
+  color: #117db0 ;
   transition: all 0.2s ease-out;
 }
 .fa-bars {

@@ -1,29 +1,24 @@
 /* Footer Container */
 .footer {
-  background-color: #333;
+  background-color: #222;
   color: #fff;
   padding: 30px 0;
   font-family: 'Open Sans', sans-serif;
-  position: s;
-  margin-top: 10px;
 }
 
 /* Footer Content Container */
 .footer-content {
   display: flex;
+  width: 70%;
+  margin: auto;
   justify-content: space-between;
   align-items: center;
+  align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
-/* Footer Logo */
-.Footer-logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-}
+
 .Footer-item {
   margin-right: 20px;
 }
@@ -32,12 +27,12 @@
   color: #fff;
   text-decoration: none;
   font-size: 16px;
-  font-style: italic;
+  /* font-style: italic; */
   position: relative;
 }
 
 /* Animated Border for Footer Navigation Links */
-.Footer-links::before {
+/* .Footer-links::before {
   content: '';
   position: absolute;
   bottom: -1px;
@@ -47,7 +42,7 @@
   background-color: #117db0;
   transform: scaleX(0);
   transition: transform 0.3s ease;
-}
+} */
 
 /* Style for the Footer Navigation Links on hover */
 .Footer-links:hover {

@@ -1,15 +1,15 @@
 const imageslider = [
   {
-    url: "image-1.jpg",
+    url: "/ctp-home-background/background1.jpg",
   },
   {
-    url: "image-2.jpg",
+    url: "/ctp-home-background/background2.png",
   },
   {
-    url: "image-3.png",
+    url: "/ctp-home-background/background3.jpg",
   },
   {
-    url: "image-4.jpg",
+    url: "/ctp-home-background/background4.jpg",
   }
 ];
 export default imageslider;
