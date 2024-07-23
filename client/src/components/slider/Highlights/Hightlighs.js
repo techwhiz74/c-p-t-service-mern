@@ -9,7 +9,7 @@ function Highlights() {
   const images = [
     "../highlight/image-1.jpg",
     "../highlight/image-2.jpg",
-    "../highlight/image-3.png",
+    "../highlight/image-3.jpg",
     "../highlight/image-4.jpg",
     "../highlight/image-5.jpg",
     "../highlight/image-6.jpg",
