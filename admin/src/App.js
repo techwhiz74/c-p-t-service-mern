@@ -9,6 +9,10 @@ import TeamMemberList from './components/team/TeamMemberList';
 import CreateTeamMember from './components/team/CreateTeamMember';
 import UpdateTeamMember from './components/team/UpdateTeamMember';
 import DeleteTeamMember from './components/team/DeleteTeamMember';
+import TestimonialList from './components/testimonial/TestimonialList';
+import CreateTestimonial from './components/testimonial/CreateTestimonial';
+import UpdateTestimonial from './components/testimonial/UpdateTestimonial';
+import DeleteTestimonial from './components/testimonial/DeleteTestimonial';
 
 function App() {
   return (
@@ -18,6 +22,7 @@ function App() {
           <ul>
             <li><Link to="/news">News</Link></li>
             <li><Link to="/team-members">Team Members</Link></li>
+            <li><Link to="/testimonials">Testimonial</Link></li>
           </ul>
         </nav>
 
@@ -34,6 +39,12 @@ function App() {
           <Route path="/create-team-member" element={<CreateTeamMember />} />
           <Route path="/update-team-member/:id" element={<UpdateTeamMember />} />
           <Route path="/delete-team-member/:id" element={<DeleteTeamMember />} />
+
+          {/* Testimonial Routes */}
+          <Route path="/testimonials" element={<TestimonialList />} />
+          <Route path="/create-testimonial" element={<CreateTestimonial />} />
+          {/* <Route path="/update-testimonial/:id" element={<UpdateTestimonial />} /> */}
+          {/* <Route path="/delete-testimonial/:id" element={<DeleteTestimonial />} /> */}
         </Routes>
       </div>
     </Router>
