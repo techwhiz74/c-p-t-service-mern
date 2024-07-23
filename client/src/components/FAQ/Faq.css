@@ -2,11 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 50px 0;
     background-color: #f5f5f5;
-    margin-bottom: -10px;
-    height: 100vh;
+    min-height: 60vh;
   }
   
   .faq-header {
@@ -17,8 +15,7 @@
   }
   
   .faq-list {
-    width: 100%;
-    max-width: 600px;
+    width: 60%;
   }
   
   .faq-item {
@@ -38,7 +35,6 @@
     justify-content: space-between;
     font-weight: bold;
     font-size: 1.2rem;
-    margin-bottom: 10px;
     color: #333;
     transition: background-color 0.3s ease-in-out;
   }
@@ -53,6 +49,8 @@
     display: none;
     font-size: 1rem;
     color: #555;
+    margin-top: 20px;
+    min-height: 50px;
   }
   
   .faq-item.active .faq-answer {

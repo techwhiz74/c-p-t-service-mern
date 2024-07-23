@@ -83,7 +83,9 @@ const Testimonials = () => {
         y: 60,
       });
     }
-
+  }, [inView, h1Animation, divAnimation]);
+  
+  useEffect(() => {
     axios.get("http://localhost:8080/api/testimonials") // Replace with your API endpoint
       .then((response) => {
         setTestimonials(response.data);
@@ -91,8 +93,7 @@ const Testimonials = () => {
       .catch((error) => {
         console.error("Error fetching testimonials:", error);
       });
-  }, [inView, h1Animation, divAnimation]);
-  
+  }, []);
 
   return (
     <motion.div
@@ -101,19 +102,15 @@ const Testimonials = () => {
     >
       <motion.h1
         className="testimonialHeading"
-        
         animate={h1Animation}
-        
       >
         Testimonials
       </motion.h1>
       <motion.div
         className="div"
-        
         animate={divAnimation}
-        
       >
-        <Slider {...settings}>
+        <div {...settings} className="grid-container">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="testimonial-item">
               <img
@@ -125,7 +122,7 @@ const Testimonials = () => {
               <p>{testimonial.testimonie}</p>
             </div>
           ))}
-        </Slider>
+        </div>
       </motion.div>
     </motion.div>
   );

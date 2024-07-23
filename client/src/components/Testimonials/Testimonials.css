@@ -3,8 +3,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    z-index: 11111111111;
+    padding: 5rem 1rem;
 }
   .testimonialHeading{
     text-align: center;
@@ -12,6 +11,14 @@
     margin-bottom: 20px;
     color: #000;
   }
+
+  .grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
   .testimonial-item {
     display: inline-block; 
     text-align: left; 

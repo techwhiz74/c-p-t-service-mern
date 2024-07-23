@@ -13,6 +13,10 @@ import TestimonialList from './components/testimonial/TestimonialList';
 import CreateTestimonial from './components/testimonial/CreateTestimonial';
 import UpdateTestimonial from './components/testimonial/UpdateTestimonial';
 import DeleteTestimonial from './components/testimonial/DeleteTestimonial';
+import FaqList from './components/faq/FaqList';
+import CreateFaq from './components/faq/CreateFaq';
+import UpdateFaq from './components/faq/UpdateFaq';
+import DeleteFaq from './components/faq/DeleteFaq';
 
 function App() {
   return (
@@ -23,6 +27,7 @@ function App() {
             <li><Link to="/news">News</Link></li>
             <li><Link to="/team-members">Team Members</Link></li>
             <li><Link to="/testimonials">Testimonial</Link></li>
+            <li><Link to="/faq">Faq</Link></li>
           </ul>
         </nav>
 
@@ -45,6 +50,12 @@ function App() {
           <Route path="/create-testimonial" element={<CreateTestimonial />} />
           <Route path="/update-testimonial/:id" element={<UpdateTestimonial />} />
           <Route path="/delete-testimonial/:id" element={<DeleteTestimonial />} />
+
+          {/* Faq Routes */}
+          <Route path="/faq" element={<FaqList />} />
+          <Route path="/create-faq" element={<CreateFaq />} />
+          <Route path="/update-faq/:id" element={<UpdateFaq />} />
+          <Route path="/delete-faq/:id" element={<DeleteFaq />} />
         </Routes>
       </div>
     </Router>

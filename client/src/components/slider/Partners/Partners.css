@@ -5,13 +5,12 @@
 }
 .partnersHeading{
   text-align: center;
-    margin: 20px 0;
-    font-size: 3rem;
+  font-size: 3rem;
+  margin: 5rem 0;
 }
 
 .slider-container h1 {
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .slider-container .slick-slide img {

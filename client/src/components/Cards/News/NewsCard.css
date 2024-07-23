@@ -7,7 +7,7 @@
   }
   .newsHeading{
     text-align: center;
-    margin: 20px 0;
+    margin: 5rem 0;
     font-size: 3rem;
   }
   .newTitle{
@@ -68,7 +68,6 @@
   
   .loadMoreButton {
     display: block;
-    width: 120px;
     margin: 20px auto;
     padding: 10px 20px;
     background-color: #117db0;
