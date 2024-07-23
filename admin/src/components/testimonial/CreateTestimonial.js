@@ -4,7 +4,7 @@ import './Styles.css'; // Import the CSS file
 
 function CreateTestimonial() {
   const [name, setName] = useState('');
-  const [testimonial, setTestimonial] = useState('');
+  const [testimonie, setTestimonie] = useState('');
   const [image, setImage] = useState('');
 
   const onSubmit = async (e) => {
@@ -13,9 +13,9 @@ function CreateTestimonial() {
     const requestData = {
       name: name,
       image: image,
-      testimonial: testimonial
+      testimonie: testimonie
     };
-
+    
     try {
       const response = await axios.post('http://localhost:8080/api/testimonials/', requestData);
       console.log('Testimonial created successfully:', response.data);
@@ -39,7 +39,7 @@ function CreateTestimonial() {
         </div>
         <div>
           <label>Testimonial:</label>
-          <textarea value={testimonial} onChange={(e) => setTestimonial(e.target.value)} />
+          <textarea value={testimonie} onChange={(e) => setTestimonie(e.target.value)} />
         </div>
         <button className="create">Create</button>
       </form>

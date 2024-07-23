@@ -2,24 +2,22 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-function UpdateNews() {
+function UpdateTestimonial() {
   const { id } = useParams(); // Extract the id parameter from the route
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [body, setBody] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
+  const [name, setName] = useState('');
+  const [image, setImage] = useState('');
+  const [testimonie, setTestimonie] = useState('');
   const [newImageUrl, setNewImageUrl] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.get(`http://localhost:8080/api/news/${id}`);
-        setTitle(result.data.title);
-        setDescription(result.data.description);
-        setBody(result.data.body);
-        setImageUrl(result.data.imageUrl); // Set the imageUrl state
+        const result = await axios.get(`http://localhost:8080/api/testimonials/${id}`);
+        setName(result.data.name);
+        setImage(result.data.image);
+        setTestimonie(result.data.testimonie);
       } catch (error) {
-        console.error('Error fetching news:', error);
+        console.error('Error fetching testimonial:', error);
       }
     };
 
@@ -31,44 +29,36 @@ function UpdateNews() {
 
     try {
       // Send the new image URL along with other news details for update
-      await axios.put(`http://localhost:8080/api/news/${id}`, {
-        title,
-        description,
-        body,
-        imageUrl: newImageUrl || imageUrl, // Use the newImageUrl if provided, otherwise keep the old imageUrl
+      await axios.put(`http://localhost:8080/api/testimonials/${id}`, {
+        name,
+        image,
+        testimonie,
+        image: newImageUrl || image, // Use the newImageUrl if provided, otherwise keep the old imageUrl
       });
-      window.location.href = '/news';
+      window.location.href = '/testimonials';
     } catch (error) {
-      console.error('Error updating news:', error);
+      console.error('Error updating Tesimonial:', error);
     }
   };
 
   return (
     <div className="dashboard-container">
-      <h2>Update News</h2>
+      <h2>Update Testimonial</h2>
       <form onSubmit={onSubmit}>
         <div>
-          <label>Title:</label>
+          <label>Name:</label>
           <input
             type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div>
-          <label>Description:</label>
+          <label>Testimonial:</label>
           <input
             type="text"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
-        </div>
-        <div>
-          <label>Body:</label>
-          <input
-            type="text"
-            value={body}
-            onChange={(e) => setBody(e.target.value)}
+            value={testimonie}
+            onChange={(e) => setTestimonie(e.target.value)}
           />
         </div>
         <div>
@@ -81,12 +71,12 @@ function UpdateNews() {
         </div>
         <div>
           <label>Current Image:</label>
-          {imageUrl && <img src={imageUrl} alt="News" style={{ width: '100px' }} />}
+          {image && <img src={image} alt="Testimonial" style={{ width: '100px' }} />}
         </div>
-        <button type="submit">Update</button>
+        <button type="submit" className='submit'>Update</button>
       </form>
     </div>
   );
 }
 
-export default UpdateNews;
+export default UpdateTestimonial;

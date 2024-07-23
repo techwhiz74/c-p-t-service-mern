@@ -32,6 +32,7 @@
   a.delete {
     background-color: #dc3545;
     color: #fff;
+    margin-right: 1rem;
   }
   
   a.delete:hover {
@@ -41,6 +42,7 @@
   a.update {
     background-color: #007bff;
     color: #fff;
+    margin-right: 1rem;
   }
   
   a.update:hover {
@@ -65,6 +67,12 @@
   /* Form Styles */
   form {
     margin-top: 20px;
+  }
+
+  .submit {
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 1rem;
   }
   
   label {

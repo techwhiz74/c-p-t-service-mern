@@ -43,8 +43,8 @@ function App() {
           {/* Testimonial Routes */}
           <Route path="/testimonials" element={<TestimonialList />} />
           <Route path="/create-testimonial" element={<CreateTestimonial />} />
-          {/* <Route path="/update-testimonial/:id" element={<UpdateTestimonial />} /> */}
-          {/* <Route path="/delete-testimonial/:id" element={<DeleteTestimonial />} /> */}
+          <Route path="/update-testimonial/:id" element={<UpdateTestimonial />} />
+          <Route path="/delete-testimonial/:id" element={<DeleteTestimonial />} />
         </Routes>
       </div>
     </Router>

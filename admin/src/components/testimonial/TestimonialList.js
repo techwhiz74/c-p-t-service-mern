@@ -29,18 +29,19 @@ function TestimonialList() {
             <th>Name</th>
             <th>Image</th>
             <th>Testimonial</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
           {testimonial.map((item) => (
             <tr key={item._id}>
               <td>{item.name}</td>
-              <td><img src={item.imageUrl} alt="Testimonial" style={{ width: '100px' }} /></td>
-              <td>{item.testimonial}</td>
+              <td><img src={item.image} alt="Testimonial" style={{ width: '100px' }} /></td>
+              <td>{item.testimonie}</td>
               <td>
-                <Link to={`/update/${item._id}`} className="update">Update</Link>
+                <Link to={`/update-testimonial/${item._id}`} className="update">Update</Link>
                 {/* Updated the Link for the delete button */}
-                <Link to={`/delete/${item._id}`} className="delete">Delete</Link>
+                <Link to={`/delete-testimonial/${item._id}`} className="delete">Delete</Link>
               </td>
             </tr>
           ))}

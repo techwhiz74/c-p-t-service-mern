@@ -47,6 +47,7 @@ a.create:hover, button.create:hover {
 a.delete, button.delete {
   background-color: #dc3545;
   color: #fff;
+  margin-right: 1rem;
 }
 
 a.delete:hover, button.delete:hover {
@@ -56,6 +57,7 @@ a.delete:hover, button.delete:hover {
 a.update, button.update {
   background-color: #007bff;
   color: #fff;
+  margin-right: 1rem;
 }
 
 a.update:hover, button.update:hover {

@@ -84,7 +84,7 @@ function UpdateTeamMember() {
           <label>Current Image:</label>
           {image && <img src={image} alt={altText} style={{ width: '100px' }} />}
         </div>
-        <button type="submit">Update</button>
+        <button type="submit" className='submit'>Update</button>
       </form>
     </div>
   );

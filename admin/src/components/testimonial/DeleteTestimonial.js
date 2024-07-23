@@ -3,46 +3,46 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import './Styles.css';
 
-function DeleteNews() {
+function DeleteTestimonial() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [news, setNews] = useState(null);
+  const [testimonial, setTestimonial] = useState(null);
 
   useEffect(() => {
-    const fetchNews = async () => {
+    const fetchTestimonial = async () => {
       try {
-        const result = await axios.get(`http://localhost:8080/api/news/${id}`);
-        setNews(result.data);
+        const result = await axios.get(`http://localhost:8080/api/testimonials/${id}`);
+        setTestimonial(result.data);
       } catch (error) {
-        console.error('Error fetching news:', error);
+        console.error('Error fetching testimonial:', error);
       }
     };
 
-    fetchNews();
+    fetchTestimonial();
   }, [id]);
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:8080/api/news/${id}`);
-      navigate("/news");
+      await axios.delete(`http://localhost:8080/api/testimonials/${id}`);
+      navigate("/testimonials");
     } catch (error) {
-      console.error('Error deleting news:', error);
+      console.error('Error deleting testimonial:', error);
     }
   };
 
   return (
     <div className="dashboard-container">
-      {news && (
+      {testimonial && (
         <>
-          <h2 className="news-title">Delete News</h2>
+          <h2 className="news-title">Delete Testimonial</h2>
           <div className="news-details">
-            <p>Title: {news.title}</p>
-            <p>Description: {news.description}</p>
+            <p>Name: {testimonial.name}</p>
+            <p>testimonial: {testimonial.testimonie}</p>
           </div>
-          <p>Are you sure you want to delete this news?</p>
+          <p>Are you sure you want to delete this testimonial?</p>
           <div className="confirmation-buttons">
             <button className="delete" onClick={handleDelete}>Yes</button>
-            <button className="create" onClick={() => navigate("/news")}>No</button>
+            <button className="create" onClick={() => navigate("/testimonials")}>No</button>
           </div>
         </>
       )}
@@ -50,4 +50,4 @@ function DeleteNews() {
   );
 }
 
-export default DeleteNews;
+export default DeleteTestimonial;
