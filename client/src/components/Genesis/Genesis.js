@@ -16,9 +16,10 @@ function Genesis() {
       ref={ref}
     >
       <div className="genContent" id="genesis">
-        <video autoplay muted loop className="Genesis_video" >
+        {/* <video autoplay muted loop className="Genesis_video" >
           <source src="https://www.align.com/hubfs/footerBG-9mb.mp4" type="video/mp4"/>
-        </video>
+        </video> */}
+        <img src='./genesis.jpg' alt="Genesis" className="Genesis_video"/>
         <h1 className="genHeading">Genesis</h1>
         <motion.p
           className="genText"

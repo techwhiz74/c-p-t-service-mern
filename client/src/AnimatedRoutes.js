@@ -17,6 +17,10 @@ import DetailedNews from "./components/Cards/News/DetailedNews";
 import Signup from "./components/Forms/SignUp/register/Signup";
 import Login from "./components/Forms/SignUp/login/Login";
 import{AnimatePresence} from "framer-motion"
+import Donate from "./components/Cards/MoreWays/Donate";
+import Ideas from "./components/Cards/MoreWays/Ideas";
+import Partner from "./components/Cards/MoreWays/Partner";
+import Volunteer from "./components/Cards/MoreWays/Volunteer";
 
 function AnimatedRoutes() {
     const user = localStorage.getItem("token");
@@ -36,6 +40,10 @@ function AnimatedRoutes() {
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/sign-up" element={<Navigate replace to="/login" />} />
+          <Route path='/donate' element={<Donate />} />
+          <Route path='/ideas' element={<Ideas />} />
+          <Route path='/volunteer' element={<Volunteer />} />
+          <Route path='/partner' element={<Partner />} />
       </Routes>
     </AnimatePresence>
   )

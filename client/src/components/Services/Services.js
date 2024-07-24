@@ -53,22 +53,22 @@ function Services() {
 
   const services = [
     {
-      icon: "fas fa-film",
-      title: "Visual Production",
+      icon: "fas fa-laptop-code",
+      title: "Web Development",
       description:
-        "The skilled creative team excels in authorship, directing, and editing. They utilize advanced techniques and innovative ideas to produce memorable works that leave a lasting impression on the audience.",
+        "Our web development service focuses on creating dynamic and responsive websites tailored to meet the unique needs of our clients. We utilize the latest technologies and best practices to ensure that your website is not only visually appealing but also user-friendly. Our services include front-end and back-end development, e-commerce solutions, content management systems (CMS), and custom web applications. Whether you need a simple informational site or a complex web platform, we provide end-to-end solutions that enhance your online presence and drive engagement.",
     },
     {
-      icon: "fas fa-bullhorn",
-      title: "Digital Marketing",
+      icon: "fas fa-chart-simple",
+      title: "Online Marketing Shops",
       description:
-        "In light of this revolution known by digital marketing, we have a creative team that keeps pace with all developments in the digital world and on all social networking sites.",
+        "Our online marketing shop service is designed to help businesses establish and grow their digital footprint. We specialize in creating effective marketing strategies that encompass search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, and email campaigns. By leveraging data-driven insights and targeted approaches, we help you reach your audience, increase brand awareness, and drive sales. Our team works closely with you to develop customized marketing plans that align with your business goals and maximize your return on investment.",
     },
     {
-      icon: "fas fa-id-card",
-      title: "Building A Business Identity",
+      icon: "fas fa-mobile-screen",
+      title: "Mobile Application Development",
       description:
-        "The Media Man team recognizes the profitability of commercial identity for entrepreneurs and aims to create a unified commercial identity for clients by leveraging foundational elements in their work.",
+        "We offer comprehensive mobile application development services for both iOS and Android platforms. Our team of skilled developers and designers work collaboratively to create intuitive and engaging mobile apps that provide seamless user experiences. From concept to launch, we ensure that your app is tailored to meet the specific needs of your target audience. Our services include native and cross-platform app development, UI/UX design, app maintenance, and updates. Whether you’re looking to build a new app or enhance an existing one, we are committed to delivering high-quality solutions that drive user engagement and satisfaction.",
     },
   ];
 

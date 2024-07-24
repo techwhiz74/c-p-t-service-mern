@@ -1,8 +1,8 @@
 .newsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    max-width: 90%;
+    grid-gap: 30px;
+    max-width: 80%;
     margin: 10px auto;
   }
   .newsHeading{

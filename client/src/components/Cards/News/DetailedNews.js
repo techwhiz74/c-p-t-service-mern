@@ -26,7 +26,7 @@ function DetailedNews() {
     <div className="detailedNewsContainer">
       <h2 className="detailedNewsTitle">{newsDetail.title}</h2>
       <div className="detailedNewsContent">
-        <img src={newsDetail.imageUrl} alt="news" />
+        <img src={newsDetail.imageUrl} alt="news" width={250}/>
         <p>{newsDetail.description}</p>
         <p>{newsDetail.body}</p>
       </div>

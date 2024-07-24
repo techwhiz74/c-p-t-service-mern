@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
 import { motion } from "framer-motion";
@@ -37,10 +37,31 @@ function Navbar() {
     visible: { opacity: 1, x: 0 }
   };
 
+  const location = useLocation();
+  const getNavbarStyle = () => {
+    switch (location.pathname) {
+      case '/login':
+        return 'other-navbar';
+      case '/signup':
+        return 'other-navbar';
+      case '/donate':
+        return 'other-navbar';
+      case '/ideas':
+        return 'other-navbar';
+      case '/volunteer':
+        return 'other-navbar';
+      case '/partner':
+        return 'other-navbar';
+      default:
+        return 'navbar';     
+    }
+  }
+
+
   return (
     <>
      <motion.nav
-        className="navbar"
+        className={`${getNavbarStyle()}`}
       >
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img src="./logo.png" alt="Logo" width={150} height={80} />

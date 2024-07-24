@@ -14,6 +14,21 @@
   background-color: transparent;
   border-bottom: 1px solid white;
 }
+
+.other-navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: absolute ;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  background-color: #222;
+}
+
 .navbar-logo {
   color: #fff;
   justify-self: start;

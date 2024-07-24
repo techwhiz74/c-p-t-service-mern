@@ -18,10 +18,20 @@ nav {
   padding: 10px 0;
 }
 
+.admin-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+nav ul li {
+  padding: 1rem;
 }
 
 nav ul li a {

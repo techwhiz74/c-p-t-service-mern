@@ -22,7 +22,10 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
+        <nav className='admin-nav'>
+          <Link to="/">
+            <img src="./logo.png" alt="Logo" width={150} height={80} />
+          </Link>
           <ul>
             <li><Link to="/news">News</Link></li>
             <li><Link to="/team-members">Team Members</Link></li>

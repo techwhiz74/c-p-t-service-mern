@@ -1,7 +1,6 @@
 .signup_container {
 	width: 100%;
-	min-height: 100vh;
-	background-image: url("/public/login.png");
+	min-height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;

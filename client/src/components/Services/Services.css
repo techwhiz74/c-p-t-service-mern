@@ -25,8 +25,8 @@
   .serviceCard {
     position: relative;
     perspective: 1000px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     cursor: pointer;
     transition: transform 0.5s;
     transform-style: preserve-3d;
