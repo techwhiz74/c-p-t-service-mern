@@ -50,7 +50,7 @@ function CreateProgram() {
         </div>
         <div>
           <label>StartDate:</label>
-          <input type="text" value={startDate} onChange={(e) => setStartDate(e.target.value)} />
+          <input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} />
         </div>
         <div>
           <label>Info:</label>

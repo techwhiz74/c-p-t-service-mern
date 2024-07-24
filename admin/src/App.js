@@ -67,8 +67,8 @@ function App() {
           {/* Program Routes */}
           <Route path="/program" element={<ProgramList />} />
           <Route path="/create-program" element={<CreateProgram />} />
-          {/* <Route path="/update-program/:id" element={<UpdateProgram />} />
-          <Route path="/delete-program/:id" element={<DeleteProgram />} /> */}
+          <Route path="/update-program/:id" element={<UpdateProgram />} />
+          <Route path="/delete-program/:id" element={<DeleteProgram />} />
         </Routes>
       </div>
     </Router>
