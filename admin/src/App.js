@@ -17,7 +17,10 @@ import FaqList from './components/faq/FaqList';
 import CreateFaq from './components/faq/CreateFaq';
 import UpdateFaq from './components/faq/UpdateFaq';
 import DeleteFaq from './components/faq/DeleteFaq';
-
+import ProgramList from './components/program/ProgramList';
+import CreateProgram from './components/program/CreateProgram';
+import UpdateProgram from './components/program/UpdateProgram';
+import DeleteProgram from './components/program/DeleteProgram';
 function App() {
   return (
     <Router>
@@ -31,6 +34,7 @@ function App() {
             <li><Link to="/team-members">Team Members</Link></li>
             <li><Link to="/testimonials">Testimonial</Link></li>
             <li><Link to="/faq">Faq</Link></li>
+            <li><Link to="/program">Program</Link></li>
           </ul>
         </nav>
 
@@ -59,6 +63,12 @@ function App() {
           <Route path="/create-faq" element={<CreateFaq />} />
           <Route path="/update-faq/:id" element={<UpdateFaq />} />
           <Route path="/delete-faq/:id" element={<DeleteFaq />} />
+
+          {/* Program Routes */}
+          <Route path="/program" element={<ProgramList />} />
+          <Route path="/create-program" element={<CreateProgram />} />
+          {/* <Route path="/update-program/:id" element={<UpdateProgram />} />
+          <Route path="/delete-program/:id" element={<DeleteProgram />} /> */}
         </Routes>
       </div>
     </Router>

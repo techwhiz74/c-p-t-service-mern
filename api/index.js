@@ -22,7 +22,7 @@ app.use(cors());
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/news", newsRoutes);
-app.use("/api/programs", programsRoutes);
+app.use("/api/program", programsRoutes);
 app.use("/api/testimonials", testimonialsRoutes);
 app.use("/api/team", teamRoutes);
 app.use("/api/faq", faqRoutes);

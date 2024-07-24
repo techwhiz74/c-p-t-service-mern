@@ -44,6 +44,8 @@ function Navbar() {
         return 'other-navbar';
       case '/signup':
         return 'other-navbar';
+      case '/programs':
+        return 'other-navbar'
       case '/donate':
         return 'other-navbar';
       case '/ideas':
@@ -53,7 +55,7 @@ function Navbar() {
       case '/partner':
         return 'other-navbar';
       default:
-        return 'navbar';     
+        return 'navbar';
     }
   }
 
