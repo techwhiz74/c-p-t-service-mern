@@ -183,7 +183,7 @@ const Contact = () => {
           <h2>Address</h2>
           <iframe
             title="This is a unique title"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7785916.048345349!2d4.3914067294194945!3d17.663566181182347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1198304cfa812ae1%3A0x1649c0960397249a!2sAgadez%2C%20Niger!5e0!3m2!1sen!2sde!4v1721130975937!5m2!1sen!2sde"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.4091983364488!2d-117.0860705492738!3d32.974451374694866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf9f994ee120d%3A0xf0c630bb0eadfb79!2s11533%20Windcrest%20Ln%2C%20San%20Diego%2C%20CA%2092128%2C%20USA!5e0!3m2!1sen!2sru!4v1721978145423!5m2!1sen!2sru"
             className="map-iframe"
             allowFullScreen=""
             loading="lazy"

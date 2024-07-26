@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button } from "./Button";
+import { LoginButton } from "./LoginButton";
+import { LogoutButton } from "./LogoutButton";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
@@ -9,6 +10,7 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [mobileDropdownVisible, setMobileDropdownVisible] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => {
@@ -146,15 +148,16 @@ function Navbar() {
           animate="visible"
           transition={{ delay: 1.2 }}>
             <Link
-              to="/signup"
+              to="/login"
               className="nav-links-mobile"
               onClick={closeMobileMenu}
             >
-              Sign Up
+              Sign In
             </Link>
           </motion.li>
         </ul>
-        <Button />
+        {isLoggedIn ? (<LoginButton />) : (<LogoutButton />)}
+        
       </motion.nav>
     </>
   );

@@ -2,10 +2,10 @@ import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
-export function Button() {
+export function LogoutButton() {
   return (
-    <Link to='login'>
-      <button className='btn'>Sign In</button>
+    <Link to='///'>
+      <button className='btn'>Sign Out</button>
     </Link>
   );
 }
