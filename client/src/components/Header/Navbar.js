@@ -142,7 +142,7 @@ function Navbar() {
               Contact Us
             </Link>
           </motion.li>
-          <motion.li
+          {/* <motion.li
           variants={linkVariants}
           initial="hidden"
           animate="visible"
@@ -154,9 +154,9 @@ function Navbar() {
             >
               Sign In
             </Link>
-          </motion.li>
+          </motion.li> */}
         </ul>
-        {isLoggedIn ? (<LoginButton />) : (<LogoutButton />)}
+        {/* {isLoggedIn ? (<LoginButton />) : (<LogoutButton />)} */}
         
       </motion.nav>
     </>

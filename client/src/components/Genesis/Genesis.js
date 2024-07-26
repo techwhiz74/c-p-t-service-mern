@@ -28,8 +28,8 @@ function Genesis() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           We are a organization founded in 2019 by a group of young
-          Nigerian social entrepreneurs who believe in the power of social
-          entrepreneurship to create a better future for Nigeria.
+          investor social entrepreneurs who believe in the power of social
+          entrepreneurship to create a better future for San Diego.
         </motion.p>
       </div>
       <div className="listContainer">
