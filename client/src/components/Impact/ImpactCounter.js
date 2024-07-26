@@ -60,7 +60,7 @@ function ImpactCounter() {
           <div className="cardItem">
             <FaUsers className="icon" />
             <CountUp
-              end={100}
+              end={118}
               suffix="+"
               duration={5}
               className="impactCounter"
@@ -70,7 +70,7 @@ function ImpactCounter() {
           <div className="cardItem">
             <FaDonate className="icon" />
             <CountUp
-              end={49876}
+              end={498760}
               prefix="$"
               duration={5}
               className="impactCounter"

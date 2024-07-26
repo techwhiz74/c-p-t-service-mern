@@ -49,7 +49,7 @@ function ProgramsC() {
     console.log("inView", inView);
 
     axios
-      .get("http://localhost:8080/api/programs")
+      .get("http://localhost:8080/api/program")
       .then((response) => {
         setProgramData(response.data);
       })

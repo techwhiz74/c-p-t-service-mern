@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: #999;
+    padding: 2rem;
   }
 .programsContainer::before{
     content: '';
@@ -12,21 +12,18 @@
     width: 100%;
     height:100%;
     z-index: -1;
-    background-color: #999;
 }
 .programsHeading {
     padding-top: 10rem;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #fff;
   }
   
   .programsSubheading {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #fff;
   }
   
   .programsLink {
@@ -83,7 +80,7 @@
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255 255 255) 42%, rgba(92, 202, 238, 0.41) 93.6%);
   }
   
   .programCardBack {

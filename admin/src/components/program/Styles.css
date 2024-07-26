@@ -93,7 +93,7 @@ label {
   color: #333;
 }
 
-input[type="text"], textarea {
+input[type="text"], input[type="date"], textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 12px;
